@@ -76,9 +76,9 @@ export const MoviesTable = ({ moviesData = undefined }) => {
                         justifyContent={'center'}
                         sx={{ color: 'white' }}
                       >
-                        {mov?.genre?.map((gen) => {
+                        {mov?.genre?.map((gen, index) => {
                           return (
-                            <Typography component={'p'}>
+                            <Typography component={'p'} key={`${gen}_${index}`}>
                               {gen},&nbsp;
                             </Typography>
                           );
