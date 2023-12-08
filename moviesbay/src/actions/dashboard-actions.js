@@ -14,6 +14,7 @@ export const getMoviesData = () => async (dispatch) => {
         return resolve(response.data);
       })
       .catch((error) => {
+        alert('Please Check the Data server');
         return reject(error);
       });
   });
