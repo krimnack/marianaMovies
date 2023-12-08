@@ -89,7 +89,7 @@ export const Dashboard = () => {
 
   return (
     <Box>
-      <Typography variant='h4'>MoviesBay</Typography>
+      <Typography variant='h4'>MarianaBay</Typography>
       <Grid container item xs={12} spacing={2} mt={2} mb={4}>
         <Grid item xs={12} md={4}>
           {' '}

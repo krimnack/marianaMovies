@@ -1,5 +1,7 @@
 import { Box, Container } from '@mui/material';
 import { Outlet } from 'react-router-dom';
+import { Header } from './headerLayout';
+import AlternateEmailIcon from '@mui/icons-material/AlternateEmail';
 
 export const MainLayout = () => {
   return (
@@ -7,13 +9,13 @@ export const MainLayout = () => {
       <Box
         component={'header'}
         display={'flex'}
-        justifyContent={'center'}
+        justifyContent={'flex-end'}
         alignItems={'center'}
         mb={2}
-        p={4}
+        py={4}
         sx={{ bgcolor: '#1c232a', color: 'white' }}
       >
-        Header
+        <Header />
       </Box>
 
       <Outlet />
@@ -27,7 +29,8 @@ export const MainLayout = () => {
         p={4}
         sx={{ bgcolor: '#62778a', color: 'white' }}
       >
-        Footer
+        Copyright {<AlternateEmailIcon sx={{ mx: 0.5, color: '#ff8a00' }} />}{' '}
+        MarianaBay. 2023
       </Box>
     </Container>
   );
