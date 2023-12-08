@@ -1,0 +1,3 @@
+[submodule "the-movies-at-mariana"]
+	path = the-movies-at-mariana
+	url = https://github.com/Mariana-Tek/the-movies-at-mariana.git
